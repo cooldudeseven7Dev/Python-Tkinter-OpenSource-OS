@@ -1,4 +1,5 @@
 # OpenSource-OperatingSystem
+100% python!
 ## Rules
 DO NOT CLAIM THIS AS YOUR OWN.
 This is an Open Source OS.
