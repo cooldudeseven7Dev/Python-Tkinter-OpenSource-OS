@@ -13,7 +13,10 @@ You May:
 You may not:
 - Claim/Redistribute as your own
 - Not give credit
-- Use as a personal ALL THE TIME operating system {This is too crappy and small}
+Tips
+- DO NOT USE THIS AS A RECOVERY OS. THIS NEEDS A OS ALREADY INSTALLED AND PYTHON ON YOUR PC TO USE. 
+- [okay actual tips]
+- If you'd like to quit the os, Use the quitOS command OR close the console window (do not close turtle graphics or the tkinter window)
 
 ## How to use
 Choose a version you'd like to use {Latest Suggested}
