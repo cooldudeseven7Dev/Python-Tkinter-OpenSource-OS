@@ -23,9 +23,9 @@ Tips
 - If you'd like to quit the os, Use the quitOS command OR close the console window (do not close turtle graphics or the tkinter window)
 
 ## How to use
--read the text above  
--Choose a version you'd like to use {Latest Suggested}  
--Install python or use somthing that can run python  
--Run main.py  
+- read the text above
+- Choose a version you'd like to use {Latest Suggested}
+- Install python or use somthing that can run python
+- Run main.py
 
 ### 😊 Thanks for using the project! We are always looking for colabarators
