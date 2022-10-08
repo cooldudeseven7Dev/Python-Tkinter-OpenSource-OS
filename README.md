@@ -1,3 +1,5 @@
+Password manager is now availible! It is not in the command list. Use PasswordManager command to get the password manager prerelease!
+
 Collaborators: cooldudeseven7Dev (Owner/Creator), cds7YT (co-owner, fixer, alt for cooldudeseven7Dev, not that active)
 # OpenSource-OperatingSystem
 100% python!
