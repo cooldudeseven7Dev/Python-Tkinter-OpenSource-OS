@@ -16,7 +16,7 @@ class define:
     def SearchForApp():
         print('OS - Output of [run] buttonClick: Now searching and opening...')
         text=searchEntry.get()
-        if text== 'quitOS':
+        if text=='quitOS':
             quit('Quit the Mini Operating System.\nThanks for running!')
         if text=='TerminalGame':
             print('OS - Chat bot session: Started')
@@ -45,11 +45,27 @@ class define:
         if text=='Circle':
             print('OS - Turtle - Rendering Small Circle')
             guy.circle(50)
-        if text== 'BigCircle':
+        if text=='BigCircle':
             print('OS - Turtle - drawing big circle')
             guy.circle(100)
+        if text=='PasswordManager':
+            action=input('Action [Read,Write,DeleteAll]')
+            if action=='Read':
+                file = open('passwords.txt','r')
+                print(file.read())
+            if action=='Write':
+                file=open('passwords.txt','a')
+                write=input('Write:')
+                file.write(str(write))
+                print('Sucess!')
+            if action=='DeleteAll':
+                yn=input('Are you sure? [y/n] Must be spelled as noted')
+                if yn=='y':
+                    file = open('passwords.txt','w')
+                    file.write(' ')
+                else:
+                    print('Did not clear file.')
 
-    def CommandsList():
         print('OS - Output of buttonClick: Opening Command List')
         commandList = Tk()
         commandList.title('OS App/Command List')
