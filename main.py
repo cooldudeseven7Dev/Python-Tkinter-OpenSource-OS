@@ -14,7 +14,7 @@ wait(0.1)
 print('OS - Initializing For GUI start')
 class define:
     def SearchForApp():
-        print('OS - Output of [run] buttonClick: Now searching and opening...')
+        print('OS - Output of [run] buttonClick: Now searching and opening...') 
         text=searchEntry.get()
         if text=='quitOS':
             quit('Quit the Mini Operating System.\nThanks for running!')
@@ -65,13 +65,15 @@ class define:
                     file.write(' ')
                 else:
                     print('Did not clear file.')
-
+    def CommandsList():
         print('OS - Output of buttonClick: Opening Command List')
         commandList = Tk()
         commandList.title('OS App/Command List')
         commandList.geometry('500x500')
         commandListCmds = Label(commandList,text='quitOS - Quits OS\nTerminalGame - Runs a chat bot in the terminal\nmath commands - calculator with 2 digit Addition,Subtraction,Multiplication,Division\nCircle - Draws a small circle using turtle\nBigCircle - Draws a big circle using turtle\n No more commands right now.')
         commandListCmds.pack()
+
+        
 print('OS - Initializing Main Window')
 root = Tk()
 root.title('OS Window')
