@@ -27,7 +27,10 @@ Tips
 ## How to use
 - read the text above
 - Choose a version you'd like to use {Latest Suggested}
-- Install python or use somthing that can run python
+- install python IDLE
+- save main.py as a runnable python file
 - Run main.py
+
+ProTip: Make sure to close the TERMINAL/CONSOLE to close all windows at once.
 
 ### 😊 Thanks for using the project! We are always looking for colabarators
