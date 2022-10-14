@@ -1,12 +1,12 @@
 print('OS - Starting import of 3 modules')
 print('OS - Import Graphics')
-from ast import main
 from tkinter import messagebox
 from tkinter import *
 from tkinter import simpledialog
 import turtle
 guy = turtle.Turtle()
-print('OS - Import Other Modules [Non Graphical Modules]')
+print('OS - Import Other Modules [Non Graphical Modules] + Setting up version...')
+ver = 1.4
 from time import sleep as wait
 from os import system as cmd
 print('OS - Initializing for boot')
@@ -49,6 +49,7 @@ class define:
             print('OS - Turtle - drawing big circle')
             guy.circle(100)
         if text=='PasswordManager':
+
             action=input('Action [Read,Write,DeleteAll]')
             if action=='Read':
                 file = open('passwords.txt','r')
@@ -65,15 +66,25 @@ class define:
                     file.write(' ')
                 else:
                     print('Did not clear file.')
+        if text=='BashRun':
+            while True:
+                cmd=input('RunBash:')
+                if cmd=='EndBashSession':
+                    break
+                else:
+                    bash_cmd.bashRun(str(cmd))
+                    print('OS - bashmode - Ended Session. ')
     def CommandsList():
         print('OS - Output of buttonClick: Opening Command List')
         commandList = Tk()
         commandList.title('OS App/Command List')
         commandList.geometry('500x500')
-        commandListCmds = Label(commandList,text='quitOS - Quits OS\nTerminalGame - Runs a chat bot in the terminal\nmath commands - calculator with 2 digit Addition,Subtraction,Multiplication,Division\nCircle - Draws a small circle using turtle\nBigCircle - Draws a big circle using turtle\n No more commands right now.')
+        commandListCmds = Label(commandList,text='quitOS - Quits OS\nTerminalGame - Runs a chat bot in the terminal\nmath commands - calculator with 2 digit Addition,Subtraction,Multiplication,Division\nCircle - Draws a small circle using turtle\nBigCircle - Draws a big circle using turtle\nPasswordManager - password manager\nBashRun - Use this command for running bash. \nRun the command EndBashSession to end your bash session\nNo more commands right now.')
         commandListCmds.pack()
-
-        
+class bash_cmd:
+    def bashRun(text):
+        print('OS - os/bashmode: Ran Command')
+        cmd(str(text))
 print('OS - Initializing Main Window')
 root = Tk()
 root.title('OS Window')
