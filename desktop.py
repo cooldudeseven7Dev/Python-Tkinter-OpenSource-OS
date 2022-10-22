@@ -1,8 +1,7 @@
 from tkinter import *  # type: ignore
 from tkinter import messagebox, simpledialog
 
-calc_enabled = '0'
-
+ver = '1.1'
 class ostool:
     class apps:
         def quitOS(): # type: ignore
@@ -35,13 +34,20 @@ class ostool:
             Divide.grid()
             Multiply= Button(root,text='Multiply',command=ostool.apps.Multiply)
             Multiply.grid()
+            #Write Above
+            VerMessage= Label(root,text='Version: '+ver)
+            VerMessage.grid(row=450,column=450,sticky=W)
+            
+            
 
 username=simpledialog.askstring('Login','Please enter your username')
-if username=='guest':
+NonUserUsername = 'guest'
+DefaultUser = NonUserUsername.encode()
+if username==DefaultUser.decode():
     messagebox.showinfo('Message','Logged In')
     root=Tk()
     root.geometry('750x750')
     ostool.appSetup.mainSetup()
     root.mainloop()
-elif not username=='guest':
+elif not username==DefaultUser.decode():
     messagebox.showerror('Error','no username was found to login to')
