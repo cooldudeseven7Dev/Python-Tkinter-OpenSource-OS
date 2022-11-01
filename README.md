@@ -32,5 +32,6 @@ Tips
 - Run main.py
 
 ProTip: Make sure to close the TERMINAL/CONSOLE to close all windows at once.
-
+Note: The Folders can be removed [Dont delete help if you need it! This contains the next update aswell]
+Note: The Folders WILL be implemented soon and wont be able to be deleted
 ### 😊 Thanks for using the project! We are always looking for colabarators
