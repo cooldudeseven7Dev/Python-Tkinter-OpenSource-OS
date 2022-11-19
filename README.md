@@ -1,4 +1,4 @@
-
+*MacOS Quits the OS after you login, it may not work. Please use windows!
 
 Collaborators: cooldudeseven7Dev (Owner/Creator), cds7YT (co-owner, fixer, alt for cooldudeseven7Dev, not that active)
 # Python Tkinter OpenSource-OperatingSystem [PTOSOS]
